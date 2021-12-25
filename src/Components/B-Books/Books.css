@@ -1,0 +1,66 @@
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+}
+.card{
+    width: 300px;
+    height: 480px;
+  transition: 0.5s;
+
+    margin: 15px;
+  box-shadow: #61045F 2px 2px 5px, #61045F -2px -2px 5px;
+
+    
+
+}
+.card:hover{
+   box-shadow: none;
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+    
+    .btn-grad {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
+    .btn-grad {
+       margin: 0px 5px;
+       padding: 10px 10px;
+       
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white;            
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+       display: block;
+     }
+
+     .btn-grad:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+     }
+
+
+     
+    
+
+.img{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    transition: 0.4s;
+    opacity: 0.9;
+}
+.img:hover{
+    box-shadow: #161b40 2px 2px 5px, #161b40 -2px -2px 5px;
+    opacity: 1;
+}
