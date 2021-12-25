@@ -9,10 +9,13 @@ export const BookReducer = (
     return { ...state, selectedBooks: [action.data] };
   }
   if (action.type === "Add-Cart") {
-    return { ...state, cart: [action.data, ...state.cart] };
+    return {
+      ...state,
+      cart: [{ ...action.data, key: state.cart.length }, ...state.cart],
+    };
   }
   if (action.type === "Remove-Product") {
-    const filtered = state.cart.filter((item) => item !== action.data);
+    const filtered = state.cart.filter((item) => item.key !== action.data.key);
     return { ...state, cart: filtered };
   }
   return state;

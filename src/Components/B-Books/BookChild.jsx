@@ -1,6 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Books.css";
+import { useDispatch } from "react-redux";
 
 const BookChild = ({ item }) => {
+  const dispatch = useDispatch();
   return (
     <div className="card">
       <img className="img" src={item.cover_image} alt="" />
@@ -8,8 +12,21 @@ const BookChild = ({ item }) => {
       <h4>Release Date:{item.releaseDate}</h4>
       <h4>Pages:{item.pages}</h4>
       <div className="btn">
-        <button className="btn-grad">Add To Cart</button>
-        <button className="btn-grad">View Details</button>
+        <button
+          className="btn-grad"
+          onClick={() => dispatch({ type: "Add-Cart", data: item })}
+        >
+          Add To Cart
+        </button>
+        <Link to="/details">
+          {" "}
+          <button
+            className="btn-grad"
+            onClick={() => dispatch({ type: "Selected-Products", data: item })}
+          >
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
