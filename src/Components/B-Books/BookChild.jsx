@@ -12,21 +12,27 @@ const BookChild = ({ item }) => {
       <h4>Release Date:{item.releaseDate}</h4>
       <h4>Pages:{item.pages}</h4>
       <div className="btn">
-        <button
-          className="btn-grad"
-          onClick={() => dispatch({ type: "Add-Cart", data: item })}
-        >
-          Add To Cart
-        </button>
-        <Link to="/details">
-          {" "}
+        <div className="Add-btn">
           <button
             className="btn-grad"
-            onClick={() => dispatch({ type: "Selected-Products", data: item })}
+            onClick={() => dispatch({ type: "Add-Cart", data: item })}
           >
-            View Details
+            Add To Cart
           </button>
-        </Link>
+        </div>
+        <div className="View-btn">
+          <Link to="/details">
+            {" "}
+            <button
+              className="btn-grad"
+              onClick={() =>
+                dispatch({ type: "Selected-Products", data: item })
+              }
+            >
+              View Details
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
