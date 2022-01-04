@@ -8,10 +8,10 @@ const BookParent = ({ search }) => {
   const dispatch = useDispatch();
   const stateProducts = useSelector((state) => state.BookReducer.books);
   const getAllData = async () => {
-    const allBooks = await axios.get("products.json");
-    dispatch({ type: "Add-Book", data: allBooks.data });
-    setBooks(allBooks.data);
+    const allBooks = await axios.get("http://localhost:3030/");
     console.log("Check books", allBooks.data);
+    // dispatch({ type: "Add-Book", data: allBooks.data});
+    setBooks(allBooks.data);
   };
   useEffect(() => {
     getAllData();
@@ -26,7 +26,7 @@ const BookParent = ({ search }) => {
     <div>
       <div className="parent">
         {books.map((item) => {
-          console.log("map==>", item);
+          // console.log("map==>", item);
           return <BookChild item={item} />;
         })}
       </div>

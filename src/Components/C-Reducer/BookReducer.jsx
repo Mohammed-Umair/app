@@ -3,7 +3,7 @@ export const BookReducer = (
   action
 ) => {
   if (action.type === "Add-Book") {
-    return { ...state, books: [...action.data, ...state.books] };
+    return { ...state, books: action.data };
   }
   if (action.type === "Selected-Products") {
     return { ...state, selectedBooks: [action.data] };
@@ -12,6 +12,7 @@ export const BookReducer = (
     return {
       ...state,
       cart: [{ ...action.data, key: state.cart.length }, ...state.cart],
+      // cart: [action.data, ...state.cart],
     };
   }
   if (action.type === "Remove-Product") {
