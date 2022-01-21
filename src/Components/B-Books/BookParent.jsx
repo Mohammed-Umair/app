@@ -10,7 +10,7 @@ const BookParent = ({ search }) => {
   const getAllData = async () => {
     const allBooks = await axios.get("http://localhost:3030/");
     console.log("Check books", allBooks.data);
-    // dispatch({ type: "Add-Book", data: allBooks.data});
+    dispatch({ type: "Add-Book", data: allBooks.data });
     setBooks(allBooks.data);
   };
   useEffect(() => {
@@ -30,6 +30,9 @@ const BookParent = ({ search }) => {
           return <BookChild item={item} />;
         })}
       </div>
+      <div className="Footer">
+        <h6>All Right reserved by Md Umair</h6>
+        </div>
     </div>
   );
 };

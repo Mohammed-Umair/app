@@ -1,4 +1,4 @@
- [
+[
     {
         "id": 1,
         "author_id": 1,
@@ -76,7 +76,7 @@
         "author_id": 4,
         "title": "Misileman Bigyanii Abdul Kalam",
         "cover_image": "https://images-na.ssl-images-amazon.com/images/I/51zZucYZvGL._SX332_BO1,204,203,200_.jpg",
-        "pages": 928,
+        "pages": 300,
         "releaseDate": "2015",
         "isbn": "al207"
     },
@@ -85,7 +85,7 @@
         "author_id": 4,
         "title": "A Gentleman in Moscow: The worldwide bestseller Paperback",
         "cover_image": "https://images-na.ssl-images-amazon.com/images/I/51k+lXZyJ6L._SY344_BO1,204,203,200_.jpg",
-        "pages": 928,
+        "pages": 250,
         "releaseDate": "2017",
         "isbn": "al207"
     },
@@ -94,7 +94,7 @@
         "author_id": 4,
         "title": "The Girl Who Knew Too Much: What if the Loved One You Lost Were to Come Back",
         "cover_image": "https://images-na.ssl-images-amazon.com/images/I/51-y33sMTyS._SX324_BO1,204,203,200_.jpg",
-        "pages": 928,
+        "pages": 180,
         "releaseDate": "2017",
         "isbn": "al207"
     },
@@ -103,7 +103,7 @@
         "author_id": 4,
         "title": "Something I Never Told You",
         "cover_image": "https://images-na.ssl-images-amazon.com/images/I/51Xjv4IzydL._SX322_BO1,204,203,200_.jpg",
-        "pages": 928,
+        "pages": 120,
         "releaseDate": "2019",
         "isbn": "al207"
     },
@@ -112,7 +112,7 @@
         "author_id": 4,
         "title": "The Psychology of Money",
         "cover_image": "https://images-eu.ssl-images-amazon.com/images/I/41r6F2LRf8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
-        "pages": 928,
+        "pages": 320,
         "releaseDate": "2020",
         "isbn": "al207"
     },
@@ -121,7 +121,7 @@
         "author_id": 4,
         "title": "Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
         "cover_image": "https://images-eu.ssl-images-amazon.com/images/I/51u2E5fNq8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
-        "pages": 928,
+        "pages": 250,
         "releaseDate": "2017",
         "isbn": "al207"
     },
@@ -131,16 +131,16 @@
         "author_id": 4,
         "title": "The Silent Patient: The record-breaking, multimillion copy Sunday Times bestselling thriller and Richard & Judy book club pick",
         "cover_image": "https://images-na.ssl-images-amazon.com/images/I/51OuP0mmnwL._SX322_BO1,204,203,200_.jpg",
-        "pages": 928,
+        "pages": 150,
         "releaseDate": "2019",
         "isbn": "al207"
     },
     {
         "id": 16,
         "author_id": 4,
-        "title": "The Silent Patient: The record-breaking, multimillion copy Sunday Times bestselling thriller and Richard & Judy book club pick",
-        "cover_image": "https://images-na.ssl-images-amazon.com/images/I/51OuP0mmnwL._SX322_BO1,204,203,200_.jpg",
-        "pages": 928,
+        "title": "The Time Machine ",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/I/51YP7fM361S._SX460_BO1,204,203,200_.jpg",
+        "pages": 144,
         "releaseDate": "2019",
         "isbn": "al207"
     },
@@ -185,7 +185,7 @@
         "author_id": 4,
         "title": "No Limits: The Art and Science of High Performance",
         "cover_image": "https://images-na.ssl-images-amazon.com/images/I/41pps+ZIgOL._SX321_BO1,204,203,200_.jpg",
-        "pages": 928,
+        "pages": 128,
         "releaseDate": "2017",
         "isbn": "al207"
     }
