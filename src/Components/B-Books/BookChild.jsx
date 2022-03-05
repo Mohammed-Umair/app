@@ -11,6 +11,7 @@ const BookChild = ({ item }) => {
       <h3>Title:{item.title.substr(0, 20) + "..."}</h3>
       <h4>Release Date:{item.releaseDate}</h4>
       <h4>Pages:{item.pages}</h4>
+      <h5>Price:${item.price}</h5>
       <div className="btn">
         <div className="Add-btn">
           <button

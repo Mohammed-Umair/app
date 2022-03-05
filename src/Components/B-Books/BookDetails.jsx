@@ -7,12 +7,13 @@ const BookDetails = () => {
     (state) => state.BookReducer.selectedBooks[0]
   );
   return (
-    <div>
-      <div className="card">
+    <div className="box1">
+      <div className="card-detail">
         <img className="img" src={selectedItems.cover_image} alt="" />
         <h3>Title:{selectedItems.title.substr(0, 20) + "..."}</h3>
         <h4>Release Date:{selectedItems.releaseDate}</h4>
         <h4>Pages:{selectedItems.pages}</h4>
+
         <div className="btn">
           <div className="Add-btn">
             <button
@@ -25,6 +26,13 @@ const BookDetails = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="box2">
+        <p>
+          {" "}
+          <b> Description:</b>
+          {selectedItems.desc}
+        </p>
       </div>
     </div>
   );

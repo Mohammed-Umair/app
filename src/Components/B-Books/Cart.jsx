@@ -16,28 +16,31 @@ const Cart = () => {
               <h3>Title:{item.title.substr(0, 20) + "..."}</h3>
               <h4>Release Date:{item.releaseDate}</h4>
               <h4>Pages:{item.pages}</h4>
-              <div className="card-btn" >
-              <div className="Remove-btn">
-                <button
-                  className="btn-grad"
-                  onClick={() =>
-                    dispatch({ type: "Remove-Product", data: item })
-                  }
-                >
-                  Remove
-                </button>
-              </div>
-              <div className="View-btn">
-                <Link to="/details">
-                  <button className="btn-grad"
+              <h5>Price:${item.price}</h5>
+
+              <div className="card-btn">
+                <div className="Remove-btn">
+                  <button
+                    className="btn-grad"
                     onClick={() =>
-                      dispatch({ type: "Selected-Products", data: item })
+                      dispatch({ type: "Remove-Product", data: item })
                     }
                   >
-                    View Details
+                    Remove
                   </button>
-                </Link>
-              </div>
+                </div>
+                <div className="View-btn">
+                  <Link to="/details">
+                    <button
+                      className="btn-grad"
+                      onClick={() =>
+                        dispatch({ type: "Selected-Products", data: item })
+                      }
+                    >
+                      View Details
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           );
