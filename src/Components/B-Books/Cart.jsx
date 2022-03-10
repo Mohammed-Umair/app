@@ -16,7 +16,7 @@ const Cart = () => {
               <h3>Title:{item.title.substr(0, 20) + "..."}</h3>
               <h4>Release Date:{item.releaseDate}</h4>
               <h4>Pages:{item.pages}</h4>
-              <h5>Price:${item.price}</h5>
+              {/* <h5>Price:${item.price}</h5> */}
 
               <div className="card-btn">
                 <div className="Remove-btn">
