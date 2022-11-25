@@ -139,7 +139,7 @@ export default function NavBarHeader({ setSearch }) {
                   
                 />
               </Search>
-              <Link to="/app/cart">
+              <Link to="/app/cart"  className="button-underline">
                 <IconButton
                   size="large"
                   edge="start"

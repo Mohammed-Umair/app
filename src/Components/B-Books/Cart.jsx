@@ -12,7 +12,7 @@ const Cart = () => {
         {cartItems.length === 0 ? (
           <div className="cardButtonBox">
             <div className="back-btn">
-              <Link to="/app">
+              <Link to="/app" className="button-underline">
                 <button className="btn-grad">Shop Items</button>
               </Link>
             </div>
@@ -40,7 +40,7 @@ const Cart = () => {
                       </button>
                     </div>
                     <div className="View-btn">
-                      <Link to="/app/details">
+                      <Link to="/app/details"  className="button-underline">
                         <button
                           className="btn-grad"
                           onClick={() =>
