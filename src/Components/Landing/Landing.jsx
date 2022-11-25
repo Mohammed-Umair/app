@@ -13,9 +13,9 @@ const Landing = () => {
         {/* <NavBar setSearch={setSearch} /> */}
         <NavBarHeader setSearch={setSearch} />
         <Routes>
-          <Route path="/" element={<BookParent search={search} />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/details" element={<BookDetails />} />
+          <Route path="/app/" element={<BookParent search={search} />} />
+          <Route path="/app/cart" element={<Cart />} />
+          <Route path="/app/details" element={<BookDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
