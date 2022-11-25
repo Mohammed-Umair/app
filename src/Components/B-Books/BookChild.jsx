@@ -25,7 +25,7 @@ const BookChild = ({ item }) => {
           </button>
         </div>
         <div className="View-btn">
-          <Link to="/details">
+          <Link to="/app/details">
             <button
               className="btn-grad"
               onClick={() =>

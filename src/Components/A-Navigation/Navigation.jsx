@@ -87,7 +87,7 @@ export default function NavBarHeader({ setSearch }) {
             justifyContent:"space-around" ,
             alignItems:"center"
           }}>
-            <Link to="/">
+            <Link to="/app">
               <Typography
                 variant="h6"
                 noWrap
@@ -139,7 +139,7 @@ export default function NavBarHeader({ setSearch }) {
                   
                 />
               </Search>
-              <Link to="/cart">
+              <Link to="/app/cart">
                 <IconButton
                   size="large"
                   edge="start"
