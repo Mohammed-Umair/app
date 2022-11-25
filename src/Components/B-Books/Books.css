@@ -35,6 +35,8 @@ i:hover {
   font-size: 25px;
   font-weight: bolder;
 }
+@media screen and (maxwidth: "767px") {
+}
 
 .search-bar {
   width: 500px;
@@ -95,17 +97,45 @@ i:hover {
   margin: 15px;
   box-shadow: #61045f 2px 2px 5px, #61045f -2px -2px 5px;
 }
+.card-text-Deatil {
+  text-align: justify;
+  margin-left: 30px;
+}
+.cardButtonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 480px;
+  margin: 15px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
 .box1 {
   display: flex;
   justify-content: center;
+  font-family: "Bai Jamjuree";
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .box2 {
-  justify-content: center;
-  align-items: center;
+  font-family: "Bai Jamjuree";
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
   margin: 30px;
   font-weight: 600;
   font-size: large;
+}
+.cardText {
+  font-family: "Bai Jamjuree" !important;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .card:hover {
   box-shadow: none;
@@ -117,11 +147,8 @@ i:hover {
   justify-content: center;
 }
 
-.card-detai {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
+.card-detail {
+  text-align: justify;
 }
 
 .Add-btn .btn-grad {
@@ -132,16 +159,26 @@ i:hover {
     #ff8008 100%
   );
 }
+.back-btn .btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff086b 0%,
+    #ff37e8 51%,
+    #ff086b 100%
+  );
+
+}
 
 .btn-grad {
   margin: 10px;
   padding: 15px 45px;
+  font-family: "Bai Jamjuree";
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
+  color: white !important;
+  box-shadow: 0 0 20px #eee !important;
   border-radius: 10px;
   display: block;
 }
@@ -154,6 +191,13 @@ i:hover {
 }
 
 .img {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  transition: 0.4s;
+  opacity: 0.9;
+}
+.Detailimg {
   margin-top: 20px;
   width: 250px;
   height: 250px;
@@ -235,4 +279,29 @@ i:hover {
   background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
   height: 0px;
   /* top: 0px; */
+}
+
+.mainDetailpage {
+  transition: 0.5s;
+  margin: 15px;
+  box-shadow: #61045f 2px 2px 5px, #61045f -2px -2px 5px;
+}
+
+@media only screen and (max-width: 777px) {
+  .box1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Bai Jamjuree";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 30px;
+  }
+  .Detailimg {
+    margin-top: 20px;
+    width: 170px;
+    height: 200px;
+    transition: 0.4s;
+    opacity: 0.9;
+  }
 }

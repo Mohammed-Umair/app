@@ -8,9 +8,12 @@ const BookChild = ({ item }) => {
   return (
     <div className="card">
       <img className="img" src={item.cover_image} alt="" />
-      <h3>Title:{item.title.substr(0, 20) + "..."}</h3>
-      <h4>Release Date:{item.releaseDate}</h4>
-      <h4>Pages:{item.pages}</h4>
+      <div className="card-text-Deatil">
+
+      <h3 className="cardText">Title:{item.title.substr(0, 20) + "..."}</h3>
+      <h4 className="cardText">Release Date:{item.releaseDate}</h4>
+      <h4 className="cardText">Pages:{item.pages}</h4>
+      </div>
       {/* <h5>Price:${item.price}</h5> */}
       <div className="btn">
         <div className="Add-btn">

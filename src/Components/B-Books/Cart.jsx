@@ -9,42 +9,54 @@ const Cart = () => {
   return (
     <div>
       <div className="parent">
-        {cartItems.map((item) => {
-          return (
-            <div className="card">
-              <img className="img" src={item.cover_image} alt="" />
-              <h3>Title:{item.title.substr(0, 20) + "..."}</h3>
-              <h4>Release Date:{item.releaseDate}</h4>
-              <h4>Pages:{item.pages}</h4>
-              {/* <h5>Price:${item.price}</h5> */}
-
-              <div className="card-btn">
-                <div className="Remove-btn">
-                  <button
-                    className="btn-grad"
-                    onClick={() =>
-                      dispatch({ type: "Remove-Product", data: item })
-                    }
-                  >
-                    Remove
-                  </button>
-                </div>
-                <div className="View-btn">
-                  <Link to="/details">
-                    <button
-                      className="btn-grad"
-                      onClick={() =>
-                        dispatch({ type: "Selected-Products", data: item })
-                      }
-                    >
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
+        {cartItems.length === 0 ? (
+          <div className="cardButtonBox">
+            <div className="back-btn">
+              <Link to="/">
+                <button className="btn-grad">Shop Items</button>
+              </Link>
             </div>
-          );
-        })}
+          </div>
+        ) : (
+          <>
+            {cartItems.map((item) => {
+              return (
+                <div className="card">
+                  <img className="img" src={item.cover_image} alt="" />
+                  <h3>Title:{item.title.substr(0, 20) + "..."}</h3>
+                  <h4>Release Date:{item.releaseDate}</h4>
+                  <h4>Pages:{item.pages}</h4>
+                  {/* <h5>Price:${item.price}</h5> */}
+
+                  <div className="card-btn">
+                    <div className="Remove-btn">
+                      <button
+                        className="btn-grad"
+                        onClick={() =>
+                          dispatch({ type: "Remove-Product", data: item })
+                        }
+                      >
+                        Remove
+                      </button>
+                    </div>
+                    <div className="View-btn">
+                      <Link to="/details">
+                        <button
+                          className="btn-grad"
+                          onClick={() =>
+                            dispatch({ type: "Selected-Products", data: item })
+                          }
+                        >
+                          View Details
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </>
+        )}
       </div>
     </div>
   );

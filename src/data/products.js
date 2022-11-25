@@ -1,4 +1,4 @@
-[
+export const BookItems=[
   {
     "id": 1,
     "author_id": 1,
